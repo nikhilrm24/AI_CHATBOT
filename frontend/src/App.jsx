@@ -48,7 +48,10 @@ function App() {
     }
 
     return (
-        <div className="flex flex-col items-center justify-center p-6 max-w-lg mx-auto bg-white rounded-xl shadow-lg border border-gray-100 mt-10">
+       <div>
+        <h1 className="text-center text-3xl font-bold mt-5 text-gray-600">programming Tutor</h1>
+         <div className="flex flex-col items-center justify-center p-6 max-w-lg mx-auto bg-white rounded-xl shadow-lg border border-gray-100 mt-10 h-50">
+          
     <div className="flex w-full gap-2 mb-4">
         <input
             type="text"
@@ -72,6 +75,7 @@ function App() {
         </div>
     )}
 </div>
+       </div>
     );
 }
 
