@@ -1,31 +1,41 @@
-# LLM API with Node.js, Express & Gemini
+## 🚀 Features
 
-A simple backend application that connects a Node.js/Express server to the Gemini API and provides an AI chat endpoint.
-
-## Features
-
-- Node.js backend
-- Express.js REST API
-- Gemini API integration
-- Environment variable configuration
+- Gemini LLM API integration
+- Prompt engineering with structured prompts
+- System instructions for AI behavior
+- Streaming AI responses
+- Express.js backend
+- React frontend
+- Real-time response rendering
+- Loading state while AI is generating
 - Error handling
-- JSON request/response
-- Tested using Postman
+- Environment variable based API key configuration
 
-## 🛠️ Tech Stack
+## 🧠 AI Concepts Implemented
 
-- Node.js
-- Express.js
-- Google Gemini API
-- JavaScript
-- Postman
+### LLM API
+Integrated Google's Gemini API using the `@google/genai` SDK.
 
-## Project Structure
+### Prompt Engineering
+Uses structured prompts with:
+- User question
+- Requirements
+- System instructions
+
+### Streaming
+AI responses are streamed from Gemini through the Express backend to the React frontend.
 
 ```text
-LLM_api/
-├── app.js
-├── package.json
-├── package-lock.json
-├── .gitignore
-└── .env
+React
+  ↓
+Express API
+  ↓
+Gemini
+  ↓
+Streaming chunks
+  ↓
+Express res.write()
+  ↓
+React ReadableStream
+  ↓
+Live response
